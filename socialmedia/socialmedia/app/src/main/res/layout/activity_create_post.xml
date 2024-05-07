@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter post title" />
+
+    <EditText
+        android:id="@+id/editTextPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPostTitle"
+        android:layout_marginTop="8dp"
+        android:hint="Enter post content"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <ImageView
+        android:id="@+id/imageViewSelectedImage"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/editTextPostContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <!-- Button to select or capture image -->
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewSelectedImage"
+        android:text="Select Image"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/buttonPublish"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSelectImage"
+        android:text="Publish"
+        android:layout_centerInParent="true" />
+
+
+
+
+</RelativeLayout>
